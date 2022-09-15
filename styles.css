@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
+
+:root {
+  --color-background: white;
+  --text-color: black;
+  --card-color: #f8f8f8;
+  --secondary-color: #f0f0f0;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--color-background);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.card {
+  width: min(20rem, 90%);
+  padding: 2rem 1.5rem;
+  background-color: var(--card-color);
+  box-shadow: 0 0 60px -10px rgba(0, 0, 0, 0.3), 0 0 25px -15px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+}
+
+.form {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px var(--secondary-color) solid;
+}
+
+input,
+li {
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: var(--secondary-color);
+}
+
+input {
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+input::placeholder {
+  font-size: 1rem;
+}
+
+li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+li:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.remove-btn {
+  top: -10px;
+  right: 0;
+  max-width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+}
+
+.remove-btn svg {
+  width: 10px;
+  transition: all 0.1s ease-in;
+}
+
+.remove-btn:hover svg {
+  fill: #ff4848;
+}
